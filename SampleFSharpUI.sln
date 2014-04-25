@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SampleFSharpUI.WPF", "SampleFSharpUI.WPF\SampleFSharpUI.WPF\SampleFSharpUI.WPF.fsproj", "{F4D3E0ED-888B-4725-BE7C-8B9A801828E8}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SampleFSharpUI.MVVM", "SampleFSharpUI.MVVM\SampleFSharpUI.MVVM\SampleFSharpUI.MVVM.fsproj", "{28E0601E-2F1F-4D2F-BA73-63E7E9F71541}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4D3E0ED-888B-4725-BE7C-8B9A801828E8}.Debug|x86.ActiveCfg = Debug|x86
+		{F4D3E0ED-888B-4725-BE7C-8B9A801828E8}.Debug|x86.Build.0 = Debug|x86
+		{F4D3E0ED-888B-4725-BE7C-8B9A801828E8}.Release|x86.ActiveCfg = Release|x86
+		{F4D3E0ED-888B-4725-BE7C-8B9A801828E8}.Release|x86.Build.0 = Release|x86
+		{28E0601E-2F1F-4D2F-BA73-63E7E9F71541}.Debug|x86.ActiveCfg = Debug|x86
+		{28E0601E-2F1F-4D2F-BA73-63E7E9F71541}.Debug|x86.Build.0 = Debug|x86
+		{28E0601E-2F1F-4D2F-BA73-63E7E9F71541}.Release|x86.ActiveCfg = Release|x86
+		{28E0601E-2F1F-4D2F-BA73-63E7E9F71541}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
