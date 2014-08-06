@@ -3,28 +3,22 @@
 open System
 open System.Windows
 open System.Windows.Controls
-open FSharpx
+open FsXaml
 open SampleFSharpUI.MVVM.Model
 
 type MainWindow = XAML<"MainWindow.xaml">
 
 let _model = new DataModel()
+let _automodel = new AutomaticDataMode()
 
 let loadWindow() =
-    let window = MainWindow()
+    let window = MainWindow().CreateRoot()
+    
+    window.DataContext <- _model
+    
+    // Uncomment to make window work without clicking the button
+    // window.DataContext <- _automodel
+    window
    
-    // Your awesome code goes here and you have strongly typed access to the XAML via "window"
-
-    // 初期値
-    _model.X <- 0
-    _model.Y <- 0   
-    _model.ANS <- 0
-    window.button1.Click.Add( fun _ -> 
-        // データバインドで設定
-        _model.ANS <- _model.X + _model.Y 
-    )
-    window.Root.DataContext <- _model
-    window.Root
-
 [<STAThread>]
 (new Application()).Run(loadWindow()) |> ignore
