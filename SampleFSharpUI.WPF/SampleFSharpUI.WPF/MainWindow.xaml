@@ -6,11 +6,11 @@
         <TextBox 
             x:Name="text1"
             FontSize="30"
-            HorizontalAlignment="Left" Height="46" Margin="10,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="238"/>
+            HorizontalAlignment="Left" Height="46" Margin="10,10,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="238"/>
         <TextBox 
             x:Name="text2"
         	FontSize="30"
-        	HorizontalAlignment="Left" Height="46" Margin="10,61,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="238"/>
+        	HorizontalAlignment="Left" Height="46" Margin="10,61,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="238"/>
         <TextBlock
             x:Name="text3"
             FontSize="30"

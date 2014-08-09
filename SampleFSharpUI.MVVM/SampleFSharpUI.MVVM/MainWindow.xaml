@@ -11,20 +11,17 @@
     Title="Sample F# UI - WPF+MVVM" Height="300" Width="400">
     <Grid>
         <TextBox 
-            x:Name="text1"
             FontSize="30"
             HorizontalAlignment="Left" Height="46" Margin="10,10,0,0" TextWrapping="Wrap" 
             Text="{Binding X, Mode=TwoWay}" VerticalAlignment="Top" Width="238"/>
         <TextBox 
-            x:Name="text2"
         	FontSize="30"
         	HorizontalAlignment="Left" Height="46" Margin="10,61,0,0" TextWrapping="Wrap" Text="{Binding Y, Mode=TwoWay}" VerticalAlignment="Top" Width="238"/>
         <TextBlock
-            x:Name="text3"
             FontSize="30"
-            HorizontalAlignment="Left" Margin="10,159,0,0" TextWrapping="Wrap" Text="{Binding ANS, Mode=TwoWay}" VerticalAlignment="Top" Width="238"/>
-        <Button 
-            x:Name="button1"
+            HorizontalAlignment="Left" Margin="10,159,0,0" TextWrapping="Wrap" Text="{Binding Answer, Mode=OneWay}" VerticalAlignment="Top" Width="238"/>
+        <Button             
+            Command="{Binding Compute}"
             FontSize="30"
             Content="Calc" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="238"/>
     </Grid>

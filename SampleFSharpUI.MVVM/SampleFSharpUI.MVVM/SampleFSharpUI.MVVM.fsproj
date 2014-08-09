@@ -51,17 +51,24 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
-    <Compile Include="ViewModelBase.fs" />
     <Compile Include="DataModel.fs" />
-    <Compile Include="App.fs" />
     <Resource Include="ApplicationResources.xaml" />
     <Resource Include="MainWindow.xaml" />
+    <Compile Include="App.fs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
-    <Reference Include="FSharpx.TypeProviders.Xaml">
-      <HintPath>..\..\packages\FSharpx.TypeProviders.Xaml.1.8.41\lib\40\FSharpx.TypeProviders.Xaml.dll</HintPath>
+    <Reference Include="FSharp.ViewModule.Core.Wpf">
+      <HintPath>..\..\packages\FSharp.ViewModule.Core.0.9.9.1\lib\net45\FSharp.ViewModule.Core.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FsXaml.Wpf">
+      <HintPath>..\..\packages\FsXaml.Wpf.0.9.8\lib\net45\FsXaml.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FsXaml.Wpf.TypeProvider">
+      <HintPath>..\..\packages\FsXaml.Wpf.0.9.8\lib\net45\FsXaml.Wpf.TypeProvider.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
@@ -76,6 +83,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>..\..\packages\Expression.Blend.Sdk.1.0.2\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="UIAutomationProvider" />
